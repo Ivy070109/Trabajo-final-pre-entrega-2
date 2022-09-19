@@ -45,11 +45,11 @@ span {
 
 .navbar .nav-item:hover {
     background-color: rgb(113, 17, 97);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
@@ -126,4 +126,34 @@ footer p {
 footer a {
     color: goldenrod;
     text-decoration: none;
+}
+
+/* discografía */
+
+#discografia:hover  {
+    background-color: rgb(113, 17, 97);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.container__disc .row h2 {
+    font-size: 2rem;
+    color: goldenrod;
+    font-family: 'DancingScript';
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container__disc .row p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.container__disc .row iframe {
+    margin-top: 40px;
+    align-items: center;
+    justify-items: center;
 }
