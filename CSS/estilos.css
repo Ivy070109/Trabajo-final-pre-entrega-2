@@ -300,6 +300,9 @@ footer p {
     color: goldenrod;
     font-size: 1rem;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
 }
 
 footer a {
@@ -334,12 +337,39 @@ footer a:hover {
 .container__disc .row p {
     color: black;
     font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .container__disc .row iframe {
     margin-top: 40px;
     align-items: center;
     justify-items: center;
+}
+
+#spotify {
+    margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+    #spotify {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .container__disc .row {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    #spotify {
+        margin-top: 5px;
+    }
+    .container__disc .row {
+        margin: 2px;
+        padding: 2px;
+        margin-top: 5px;
+    }
 }
 
 /* galería */
@@ -368,10 +398,12 @@ footer a:hover {
 }
 
 .main_gallery h2 {
-    font-size: 2rem;
-    color: goldenrod;
+    font-size: 2.5rem;
+    color: rgb(113, 17, 97);
     text-align: center;
-    margin: 15px;
+    margin: 20px;
+    font-family: 'DancingScript';
+    font-weight: bold;
 }
 
 .main_gallery img {
@@ -382,6 +414,20 @@ footer a:hover {
     -webkit-filter: grayscale(4);
     padding: 10px;
     margin: 2px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .main_gallery img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main_gallery img {
+        width: 350px;
+        height: 450px;
+    }
 }
 
 .main_gallery img:hover {
@@ -414,6 +460,7 @@ img .free:hover {
   .footer { 
     grid-area: footer; 
     background-color: rgb(32, 27, 27);
+    margin-top: 20px;
 }
 
 /* noticias */
@@ -449,9 +496,10 @@ img .free:hover {
 .main h2 {
     font-family: 'DancingScript';
     font-size: 2.5rem;
-    color: goldenrod;
+    color: rgb(113, 17, 97);
     text-align: center;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .main h6 {
@@ -467,23 +515,39 @@ img .free:hover {
 
 .section p {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-top: 150px;
 }
 
 .section__a {
     grid-area: section__a;
     text-align: center;
+    margin-bottom: 0;
 }
-  
+
+.section2 {
+    margin-top: 0;
+}
+
   .empty { 
     grid-area: empty; 
 }
   
 .empty img {
-    width: 600px;
+    width: 700px;
     height: auto;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+@media (width-max: 768px) {
+    .section p {
+        margin-top: 10px;
+    }
+    .empty img  {
+        width: 200px;
+        height: 250px;
+    }
 }
 
   .section2 { 
@@ -536,13 +600,15 @@ img .free:hover {
     font-size: 2.5rem;
     font-family: 'DancingScript';
     font-weight: bold;
-    color: goldenrod;
+    color: rgb(113, 17, 97);
+    margin-top: 20px;
 }
   
 .container__contactos .section p {
-    font-size: 2rem;
-    font-family: 'DancingScript';
+    font-size: 1.3rem;
+    font-family: 'Charm-Regular';
     color: black;
+    margin-top: 10px;
 }
   
   .main { 
@@ -552,10 +618,11 @@ img .free:hover {
 .container__contactos .main #direccion {
     align-items: center;
     border-radius: 30px;
+    margin: 20px 40px;
 }
 
 .container__contactos .main p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
   
@@ -566,21 +633,36 @@ img .free:hover {
 .container__contactos .form {
     width: 70%;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px 40px;
     font-size: 1.2rem;
+}
+
+.container__contactos .form label {
+    color: black;
+    font-weight: bold;
 }
 
 .container__contactos .form input {
     background-color: rgb(228, 140, 206);
 }
 
+.container__contactos .form fieldset {
+    border: solid 3px black;
+    padding: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgb(113, 17, 97);
+}
 .container__contactos .form textarea {
     background-color: rgb(228, 140, 206);
 }
 
 .container__contactos .form #boton {
     color: black;
-    background-color: #e48cce;
+    background-color: goldenrod;
     width: 100%;
     text-align: center;
 }
@@ -588,6 +670,7 @@ img .free:hover {
 .container__contactos .form #boton:hover {
     transform: scale(1.5);
     color: goldenrod;
+    background-color: black;
 }
   
   .footer { 
