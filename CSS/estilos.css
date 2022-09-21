@@ -58,6 +58,7 @@ span {
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+    color: goldenrod;
 }
 
 .navbar .dropdown-item:hover {
@@ -68,9 +69,11 @@ span {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    color: goldenrod;
 }
 
 .navbar .nav-item a:hover {
+    color: goldenrod;
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -96,6 +99,18 @@ span {
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
     background-color: rgb(113, 17, 97);
+}
+
+.navbar-toggler {
+   border: solid 3px goldenrod;
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
 }
 
 .container {
@@ -141,6 +156,48 @@ section p {
         margin-left: 5px;
         margin-right: 5px;
     }
+    .navbar .nav-item:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        background-color: rgb(113, 17, 97);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: goldenrod;
+}
+    .navbar .dropdown-item:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        background-color: rgb(113, 17, 97);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: goldenrod;
+}
+    .navbar .nav-item a:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        background-color: rgb(113, 17, 97);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: goldenrod;
+}
 }
 
 @media (max-width: 420px) {
