@@ -101,29 +101,6 @@ span {
     background-color: rgb(113, 17, 97);
 }
 
-@media (max-width: 768px) {
-    .d-flex .btn:hover {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-}    
-}
-
-@media (max-width: 420px) {
-    .navbar {
-        width: 100%;
-    }
-    .d-flex .btn:hover {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-}
-}
-
 .navbar-toggler {
    border: solid 3px goldenrod;
 }
@@ -163,83 +140,16 @@ section p {
 .album {
     width: 530px;
     height: 450px;
+    transition: width 3s, height 2s;
+    -webkit-transition: width 3s, height 2s;
+    -moz-transition: width 3s, height 2s;
+    -ms-transition: width 3s, height 2s;
+    -o-transition: width 3s, height 2s;
 }
 
-@media (max-width: 768px) {
-    .album {
-        width: 350px;
-        height: 450px;
-        align-items: center;
-        margin-top: 60px;
-        margin-left: 0;
-        margin-right: 20px;
-    }
-    section p {
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .navbar .nav-item:hover {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-        background-color: rgb(113, 17, 97);
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        color: goldenrod;
-}
-    .navbar .dropdown-item:hover {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-        background-color: rgb(113, 17, 97);
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        color: goldenrod;
-}
-    .navbar .nav-item a:hover {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-        background-color: rgb(113, 17, 97);
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        color: goldenrod;
-}
-}
-
-@media (max-width: 420px) {
-    .album {
-        width: 320px;
-        height: 350px;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    section h2 {
-        font-size: 2rem;
-        margin-top: 20px;
-    }
-    section p {
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+.album:hover {
+    width: 700px;
+    height: 600px;
 }
 
 aside h3 {
@@ -336,6 +246,119 @@ footer a {
 footer a:hover {
     color: #e48cce;
 }
+
+@media (max-width: 768px) {
+    .d-flex .btn:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}    
+    .album {
+        width: 350px;
+        height: 450px;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 0;
+        margin-right: 20px;
+        transition: width 3s, height 2s;
+        -webkit-transition: width 3s, height 2s;
+        -moz-transition: width 3s, height 2s;
+        -ms-transition: width 3s, height 2s;
+        -o-transition: width 3s, height 2s;
+}
+    .album:hover {
+        width: 500px;
+        height: 550px;
+    }
+    section p {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .navbar .nav-item:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        background-color: rgb(113, 17, 97);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: goldenrod;
+}
+    .navbar .dropdown-item:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        background-color: rgb(113, 17, 97);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: goldenrod;
+}
+    .navbar .nav-item a:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        background-color: rgb(113, 17, 97);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: goldenrod;
+}
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        width: 100%;
+    }
+    .d-flex .btn:hover {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+    .album {
+        width: 200px;
+        height: 250px;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: width 3s, height 2s;
+        -webkit-transition: width 3s, height 2s;
+        -moz-transition: width 3s, height 2s;
+        -ms-transition: width 3s, height 2s;
+        -o-transition: width 3s, height 2s;
+}
+    .album {
+        width: 250px;
+        height: 300px;
+    }
+    section h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    section p {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
 
 /* discografía */
 
@@ -457,23 +480,6 @@ footer a:hover {
     filter: grayscale(0);
 }
 
-.main_gallery img .dance:hover {
-    transform: translate3d(400px, 150px);
-    -webkit-transform: translate3d(400px, 150px);
-    -moz-transform: translate3d(400px, 150px);
-    -ms-transform: translate3d(400px, 150px);
-    -o-transform: translate3d(400px, 150px);
-}
-
-img .free:hover {
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-    transition: 1s ease-in-out 0ms;
-}
-
 .main_gallery .galería {
     display: flex;
     flex-wrap: wrap;
@@ -567,15 +573,6 @@ img .free:hover {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
-
-.dance__fever:hover {
-    transform: scale(2, 2);
-    -webkit-transform: scale(2, 2);
-    -moz-transform: scale(2, 2);
-    -ms-transform: scale(2, 2);
-    -o-transform: scale(2, 2);
-    z-index: 1;
 }
 
   .section2 { 
@@ -746,6 +743,8 @@ img .free:hover {
     align-items: center;
     margin: 20px 40px;
     font-size: 1.2rem;
+    justify-content: center;
+    justify-items: center;
 }
 
 .container__contactos .form h3 {
@@ -829,6 +828,7 @@ img .free:hover {
         align-items: center;
         margin: 20px 40px;
         font-size: 1.2rem;
+        justify-content: center;
     }
 }
 
