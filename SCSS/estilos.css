@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(228, 140, 206);
+  font-family: "Charm-Regular";
+}
+
+@font-face {
+  font-family: "Charm-Regular";
+  src: url(../Fuentes/Charm-Regular.ttf);
+}
+@font-face {
+  font-family: "DancingScript";
+  src: url(../Fuentes/DancingScript.ttf);
+}/*# sourceMappingURL=estilos.css.map */
