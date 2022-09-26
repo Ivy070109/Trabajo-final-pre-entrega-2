@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Charm-Regular';
+  src: url(../Fuentes/Charm-Regular.ttf); }
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url(../Fuentes/DancingScript.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #e48cce;
+  font-family: 'Charm-Regular'; }

@@ -1,0 +1,27 @@
+$header: rgb(32, 27, 27);
+$titulos: rgb(113, 17, 97);
+$fondo: rgb(228, 140, 206);
+$principales: goldenrod;
+$font_titulos: 'DancingScript';
+$font: 'Charm-Regular';
+
+@font-face {
+    font-family: 'Charm-Regular';
+    src: url(../Fuentes/Charm-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../Fuentes/DancingScript.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(228, 140, 206);
+    font-family: 'Charm-Regular';
+}
