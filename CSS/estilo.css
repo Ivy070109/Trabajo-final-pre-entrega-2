@@ -12,5 +12,80 @@
   box-sizing: border-box; }
 
 body {
-  background: #e48cce;
-  font-family: 'Charm-Regular'; }
+  background: #e48cce; }
+
+header {
+  text-align: center; }
+  header .flo_machine {
+    color: goldenrod;
+    font-family: "DancingScript";
+    font-size: 1.5rem;
+    font-weight: bold; }
+  header img {
+    width: 35px;
+    height: 40px; }
+  header ul {
+    color: goldenrod; }
+    header ul li {
+      color: goldenrod;
+      font-size: 1.2rem;
+      font-family: "DancingScript"; }
+      header ul li .nav-link {
+        color: goldenrod; }
+        header ul li .nav-link:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          background-color: #711161;
+          color: goldenrod;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px; }
+      header ul li #home {
+        color: goldenrod; }
+        header ul li #home:hover {
+          color: goldenrod; }
+      header ul li .dropdown-menu {
+        color: goldenrod;
+        font-size: 1rem; }
+        header ul li .dropdown-menu .dropdown-item {
+          color: goldenrod;
+          font-size: 1rem; }
+          header ul li .dropdown-menu .dropdown-item:hover {
+            background-color: #711161;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px; }
+  header .d-flex {
+    font-family: "DancingScript";
+    font-size: 1.2rem;
+    font-weight: bold; }
+    header .d-flex .form-control {
+      background-color: goldenrod;
+      border: solid goldenrod 1px; }
+    header .d-flex .btn {
+      font-weight: bold;
+      color: goldenrod;
+      border: solid goldenrod 1px; }
+      header .d-flex .btn:hover {
+        background-color: #711161;
+        color: goldenrod;
+        border: solid #201b1b 1px;
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3); }
+
+main section {
+  text-align: center; }
+  main section h2 {
+    color: #711161;
+    font-size: 2.5rem;
+    font-family: "DancingScript"; }
