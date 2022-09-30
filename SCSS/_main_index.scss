@@ -1,0 +1,53 @@
+main {
+    padding: 20px;
+    section {
+        text-align: center;
+        font-size: $size_p;
+        line-height: 1.5;
+        h2 {
+            color: $violeta;
+            font-family: $titulos;
+            padding: 10px;
+            font-size: $size_titulos;
+            font-weight: bold;
+            }      
+        p {
+            color: $colorHeader;
+            padding: 5px;
+            top: 0;
+            font-family: $parrafos;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel {
+            box-shadow: 0 0 20px 0 rgb(167, 43, 220);
+            filter: grayscale(5);
+            -webkit-filter: grayscale(5);
+            &:hover {
+                filter: none;
+                -webkit-filter: none;
+}
+} 
+   }
+   aside {
+        margin-top: 10px;
+        padding: 10px;
+        .aside__titulo {
+            font-family: $parrafos;
+            margin-top: 2rem;
+            font-weight: bold;
+            color: $violeta;
+        }
+        .social {
+            font-size: 4rem;
+            #facebook {
+                color: black;
+                margin: 0 auto;
+                
+            }
+        }
+   }
+}        
+
+
+
