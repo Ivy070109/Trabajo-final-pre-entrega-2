@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Charm-Regular';
   src: url(../Fuentes/Charm-Regular.ttf); }
@@ -112,14 +113,130 @@ main {
         -webkit-filter: none; }
   main aside {
     margin-top: 10px;
-    padding: 10px; }
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     main aside .aside__titulo {
       font-family: "Charm-Regular";
       margin-top: 2rem;
       font-weight: bold;
       color: #711161; }
     main aside .social {
-      font-size: 4rem; }
+      font-size: 3.5rem;
+      display: flex;
+      width: 50%;
+      justify-content: space-around; }
       main aside .social #facebook {
-        color: black;
+        color: #711161;
         margin: 0 auto; }
+        main aside .social #facebook:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+      main aside .social #twitter {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #twitter:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+      main aside .social #instagram {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #instagram:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+      main aside .social #youtube {
+        color: #711161;
+        margin: 0 auto;
+        /* cambiar los socials con mixin */ }
+        main aside .social #youtube:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+
+footer {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  font-family: "Charm-Regular"; }
+  footer p {
+    color: goldenrod; }
+    footer p a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #711161; }
+      footer p a:hover {
+        color: #e48cce; }
+
+.container__discografía {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.8fr 1.8fr 0.2fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "main" "section" "footer"; }
+
+header {
+  grid-area: header; }
+
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center; }
+  .main .carousel {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 0 black; }
+    .main .carousel .carousel-caption {
+      color: #711161;
+      font-family: "Charm-Regular"; }
+      .main .carousel .carousel-caption a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold; }
+        .main .carousel .carousel-caption a:hover {
+          color: goldenrod; }
+
+section {
+  grid-area: section;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+  section .accordion {
+    width: 90%; }
+    section .accordion .accordion-item {
+      color: black;
+      font-family: "Charm-Regular";
+      font-size: 1.2rem;
+      line-height: 2;
+      border: 1px solid black;
+      box-shadow: 0 0 15px 0 black;
+      background: linear-gradient(45deg, #711161, #e48cce); }
+      section .accordion .accordion-item button {
+        color: goldenrod;
+        font-size: 1.5rem;
+        background-color: #201b1b; }
+
+footer {
+  grid-area: footer; }

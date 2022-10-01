@@ -20,7 +20,7 @@ main {
             justify-content: center;
         }
         .carousel {
-            box-shadow: 0 0 20px 0 rgb(167, 43, 220);
+            box-shadow: 0 0 20px 0 $sombra;
             filter: grayscale(5);
             -webkit-filter: grayscale(5);
             &:hover {
@@ -32,6 +32,10 @@ main {
    aside {
         margin-top: 10px;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .aside__titulo {
             font-family: $parrafos;
             margin-top: 2rem;
@@ -39,12 +43,59 @@ main {
             color: $violeta;
         }
         .social {
-            font-size: 4rem;
+            font-size: 3.5rem;
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
             #facebook {
-                color: black;
+                color: $violeta;
                 margin: 0 auto;
-                
+                &:hover {
+                    transform: scale(1.5);
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                    color: $dorado;
+                }
             }
+            #twitter {
+                color: $violeta;
+                margin: 0 auto;
+                &:hover {
+                    transform: scale(1.5);
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                    color: $dorado;
+                }
+            }
+            #instagram {
+                color: $violeta;
+                margin: 0 auto;
+                &:hover {
+                    transform: scale(1.5);
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                    color: $dorado;
+}
+            }
+            #youtube {
+                color: $violeta;
+                margin: 0 auto;
+                &:hover {
+                    transform: scale(1.5);
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    -o-transform: scale(1.5);
+                    color: $dorado;
+} /* cambiar los socials con mixin */
+            }
+
         }
    }
 }        

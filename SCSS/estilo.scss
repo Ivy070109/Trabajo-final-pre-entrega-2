@@ -7,6 +7,7 @@ $parrafos: 'Charm-Regular';
 $auxiliar: white;
 $size_titulos: 2.5rem;
 $size_p: 1.4rem;
+$sombra: rgb(167, 43, 220);
 
 
 @font-face {
@@ -32,3 +33,7 @@ body {
 @import "header";
 
 @import "main_index";
+
+@import "footer";
+
+@import "discografia";
