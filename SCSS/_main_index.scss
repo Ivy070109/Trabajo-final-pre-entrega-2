@@ -1,5 +1,5 @@
 main {
-    padding: 20px;
+    margin-top: 20px;
     section {
         text-align: center;
         font-size: $size_p;
@@ -10,15 +10,14 @@ main {
             padding: 10px;
             font-size: $size_titulos;
             font-weight: bold;
-            }      
+            } 
         p {
-            color: $colorHeader;
-            padding: 5px;
-            top: 0;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: black;
             font-family: $parrafos;
-            align-items: center;
-            justify-content: center;
-        }
+            text-align: center;
+        }   
         .carousel {
             box-shadow: 0 0 20px 0 $sombra;
             filter: grayscale(5);

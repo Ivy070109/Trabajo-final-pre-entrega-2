@@ -17,7 +17,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <img src="../IMG/logo.png" alt="logo" width="35" height="40">
-              <span>Florence + The Machine</span>
+              <span class="flo_machine">Florence + The Machine</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,53 +63,59 @@
           </div>
       </nav>
     </header>
-    <div class="row">
-      <section class="col-xs-12 col-s-12 col-md-12 col-lg-12">
-        <h2>Contáctanos</h2>
-      </section>
-      <div class="col-xs-12 col-s-12 col-md-6 col-lg-6">
-        <main class="main">
-          <div class="col-xs-12 col-s-12 col-md-6 col-lg-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open-heart-fill" viewBox="0 0 16 16">
+    <main class="contenedor">
+      <div class="row">
+        <section class="col-xs-12 col-s-12 col-md-12 col-lg-12">
+          <h2>Contáctanos</h2>
+        </section>
+        <section class="section2 col-xs-12 col-s-12 col-md-6 col-lg-6">
+          <div class="contenedor_info">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-open-heart-fill" viewBox="0 0 16 16" id="mail">
               <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l4.222 2.475c.024-.058.05-.114.08-.17.665-1.3 2.362-1.917 3.698-1.25 1.336-.667 3.033-.05 3.699 1.25a3.3 3.3 0 0 1 .08.17L16 5.713V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM0 6.873l4 2.344c-.012.542.124 1.117.416 1.694l.004.006L0 13.372v-6.5Zm.059 7.611 4.9-2.723c.563.73 1.383 1.467 2.49 2.198l.551.365.551-.365c1.107-.73 1.927-1.467 2.49-2.198l4.9 2.723A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516ZM16 13.372l-4.42-2.455.004-.006c.292-.577.428-1.152.415-1.694L16 6.873v6.5Z"/>
               <path d="M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
             </svg>
-              <a href="mailto:FlorenceFans@gmail.com"><i class="bi bi-envelope-open-heart-fill"></i>
-                <span>FlorenceFans@gmail.com</span>
-              </a>
-              <p>Avenida Siempre Viva No. 124, Buenos Aires</p>
-              <p><iframe id="direccion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435.5288929749132!2d-58.61822498342335!3d-34.48573971129025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca4cb4ab3bab3%3A0x4268f98b5b8c5d12!2sMen%C3%A9ndez%20y%20Pelayo%2C%20Don%20Torcuato%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661897110452!5m2!1ses-419!2sar" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-          </div>  
-        </main>
+            <a href="mailto:FlorenceFans@gmail.com"><i class="bi bi-envelope-open-heart-fill"></i>
+              <span>FlorenceFans@gmail.com</span>
+            </a>
+            <br>
+            <br>
+            <h5>También podés visitarnos en:</h5>
+            <p>Avenida Siempre Viva No. 124, Buenos Aires</p>
+            <div class="map">
+                <iframe id="direccion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435.5288929749132!2d-58.61822498342335!3d-34.48573971129025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca4cb4ab3bab3%3A0x4268f98b5b8c5d12!2sMen%C3%A9ndez%20y%20Pelayo%2C%20Don%20Torcuato%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661897110452!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </section>
+        <form class="forma col-xs-12 col-s-12 col-md-6 col-lg-6">
+          <fieldset>
+            <h3>Para cualquier consulta o proyecto, siéntanse libres de estar en contacto con nosotros llenando la siguiente forma:</h3>
+            <br>
+            <br>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos ésta información con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido">
+            </div>
+            <div class="mb-3">
+              <label for="comentarios" class="form-label">Escribí tus comentarios</label>
+              <textarea name="comentarios" class="form-control" id="comentarios" cols="30" rows="10"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Deseo recibir respuestas</label>
+            </div>
+            <button type="submit" class="btn" id="boton">Enviar</button>
+          </fieldset>
+        </form>
       </div>
-      <form class="col-xs-12 col-s-12 col-md-6 col-lg-6">
-        <h3>Para cualquier consulta o proyecto, siéntanse libres de estar en contacto con nosotros llenando la siguiente forma:</h3>
-        <fieldset>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">No compartiremos ésta información con nadie más.</div>
-          </div>
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre">
-          </div>
-          <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido">
-          </div>
-          <div class="mb-3">
-            <label for="comentarios" class="form-label">Escribí tu comentarios</label>
-            <textarea name="comentarios" class="form-control" id="comentarios" cols="30" rows="10"></textarea>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Deseo recibir respuestas</label>
-          </div>
-          <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
-        </fieldset>
-      </form>
-    </div>
+    </main>
     <footer class="bg-dark col-xs-12 col-s-12 col-md-12 col-lg-12">
       <p><a href="top">Ir arriba</a></p>
       <p>Página sin fines de lucro.</p>

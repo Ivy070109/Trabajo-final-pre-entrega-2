@@ -1,0 +1,31 @@
+.main_gallery {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    h2 {
+        color: $violeta;
+        font-family: $titulos;
+        padding: 10px;
+        font-size: $size_titulos;
+        font-weight: bold;
+        margin: 20px o;
+    }
+    .galería {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;       
+    }
+    img {
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        border: 5px double $dorado;
+        padding: 5px;
+        filter: grayscale(5);
+        -webkit-filter: grayscale(5);
+        &:hover {
+            filter: none;
+            -webkit-filter: none;
+}
+}
+}

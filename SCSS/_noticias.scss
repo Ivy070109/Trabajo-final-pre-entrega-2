@@ -1,0 +1,38 @@
+main {
+    margin-top: 20px;
+    h2 {
+        color: $violeta;
+        font-family: $titulos;
+        padding: 10px;
+        font-size: $size_titulos;
+        font-weight: bold;
+        margin: 20px o;
+        text-align: center;
+    }
+    section {
+        padding: 0 20px;
+        margin-bottom: 20px;
+        .parrafito {
+            margin-top: 30px;
+            font-size: 1.3rem;
+            color: black;
+            line-height: 1.5;
+            padding: 20px;
+        }
+        img {
+            width: 600px;
+            height: auto;
+        }
+        p {
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+    }
+    aside {
+        .video {
+            margin-top: 0;
+            margin-bottom: 30px;
+
+        }
+    }
+}
