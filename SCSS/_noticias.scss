@@ -13,26 +13,36 @@ main {
         padding: 0 20px;
         margin-bottom: 20px;
         .parrafito {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 1.3rem;
             color: black;
             line-height: 1.5;
             padding: 20px;
         }
-        img {
-            width: 600px;
-            height: auto;
-        }
+        .contenedor_concierto {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 600px;
+                height: auto;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                box-shadow: 0 20px 20px 0 $colorHeader;
+}
+        }              
+            }
         p {
             font-size: 1.3rem;
             line-height: 1.5;
         }
-    }
     aside {
         .video {
             margin-top: 0;
-            margin-bottom: 30px;
-
+            margin-bottom: 20px;
+            box-shadow: 0 20px 20px 0 $colorHeader;
         }
     }
 }

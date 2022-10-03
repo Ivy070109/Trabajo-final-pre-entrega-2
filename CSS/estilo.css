@@ -97,77 +97,81 @@ main {
       padding: 10px;
       font-size: 2.5rem;
       font-weight: bold; }
-    main section p {
-      font-size: 1.3rem;
-      line-height: 1.5;
-      color: black;
-      font-family: "Charm-Regular";
-      text-align: center; }
-    main section .carousel {
-      box-shadow: 0 0 20px 0 #a72bdc;
-      filter: grayscale(5);
-      -webkit-filter: grayscale(5); }
-      main section .carousel:hover {
-        filter: none;
-        -webkit-filter: none; }
-  main aside {
-    margin-top: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main aside .aside__titulo {
-      font-family: "Charm-Regular";
-      margin-top: 2rem;
-      font-weight: bold;
-      color: #711161; }
-    main aside .social {
-      font-size: 3.5rem;
+      @media (max-width: 420px) {
+        main section h2 {
+          font-size: 2rem;
+          color: blueviolet; } }
+      main section h2 p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        color: black;
+        font-family: "Charm-Regular";
+        text-align: center; }
+      main section h2 .carousel {
+        box-shadow: 0 20px 20px 0 #201b1b;
+        filter: grayscale(5);
+        -webkit-filter: grayscale(5); }
+        main section h2 .carousel:hover {
+          filter: none;
+          -webkit-filter: none; }
+    main section aside {
+      margin-top: 10px;
+      padding: 10px;
       display: flex;
-      width: 50%;
-      justify-content: space-around; }
-      main aside .social #facebook {
-        color: #711161;
-        margin: 0 auto; }
-        main aside .social #facebook:hover {
-          transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
-          color: goldenrod; }
-      main aside .social #twitter {
-        color: #711161;
-        margin: 0 auto; }
-        main aside .social #twitter:hover {
-          transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
-          color: goldenrod; }
-      main aside .social #instagram {
-        color: #711161;
-        margin: 0 auto; }
-        main aside .social #instagram:hover {
-          transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
-          color: goldenrod; }
-      main aside .social #youtube {
-        color: #711161;
-        margin: 0 auto;
-        /* cambiar los socials con mixin */ }
-        main aside .social #youtube:hover {
-          transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
-          color: goldenrod; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main section aside .aside__titulo {
+        font-family: "Charm-Regular";
+        margin-top: 2rem;
+        font-weight: bold;
+        color: #711161; }
+      main section aside .social {
+        font-size: 3.5rem;
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        margin-bottom: 30px; }
+        main section aside .social #facebook {
+          color: #711161;
+          margin: 0 auto; }
+          main section aside .social #facebook:hover {
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            color: goldenrod; }
+        main section aside .social #twitter {
+          color: #711161;
+          margin: 0 auto; }
+          main section aside .social #twitter:hover {
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            color: goldenrod; }
+        main section aside .social #instagram {
+          color: #711161;
+          margin: 0 auto; }
+          main section aside .social #instagram:hover {
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            color: goldenrod; }
+        main section aside .social #youtube {
+          color: #711161;
+          margin: 0 auto; }
+          main section aside .social #youtube:hover {
+            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            color: goldenrod; }
 
 footer {
   font-size: 0.8rem;
@@ -176,7 +180,7 @@ footer {
   text-align: center;
   padding: 5px;
   font-family: "Charm-Regular";
-  box-shadow: 0 0 20px 0 #a72bdc; }
+  box-shadow: 0 0 20px 0 #201b1b; }
   footer p {
     color: goldenrod; }
     footer p a {
@@ -238,22 +242,23 @@ section {
 .main_gallery {
   margin-top: 20px;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
   .main_gallery h2 {
     color: #711161;
     font-family: "DancingScript";
     padding: 10px;
     font-size: 2.5rem;
-    font-weight: bold;
-    margin: 20px o; }
+    font-weight: bold; }
   .main_gallery .galería {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 30px; }
   .main_gallery img {
     width: 400px;
     height: 500px;
-    margin: 10px;
+    margin: 20px;
     border: 5px double goldenrod;
     padding: 5px;
     filter: grayscale(5);
@@ -276,20 +281,30 @@ main {
     padding: 0 20px;
     margin-bottom: 20px; }
     main section .parrafito {
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: 1.3rem;
       color: black;
       line-height: 1.5;
       padding: 20px; }
-    main section img {
-      width: 600px;
-      height: auto; }
-    main section p {
-      font-size: 1.3rem;
-      line-height: 1.5; }
+    main section .contenedor_concierto {
+      display: flex;
+      justify-content: center; }
+      main section .contenedor_concierto img {
+        width: 600px;
+        height: auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: 0 20px 20px 0 #201b1b; }
+  main p {
+    font-size: 1.3rem;
+    line-height: 1.5; }
   main aside .video {
     margin-top: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 20px;
+    box-shadow: 0 20px 20px 0 #201b1b; }
 
 section {
   margin-top: 20px; }
@@ -338,7 +353,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
   .forma fieldset {
     background: linear-gradient(90deg, #e48cce, #711161);
     width: 80%;
@@ -350,7 +365,7 @@ section {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    box-shadow: 0 0 30px 0 #a72bdc; }
+    box-shadow: 0 0 30px 0 black; }
     .forma fieldset h3 {
       font-family: "Charm-Regular";
       font-size: 1.5rem;

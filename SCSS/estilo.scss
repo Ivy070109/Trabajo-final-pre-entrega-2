@@ -7,7 +7,9 @@ $parrafos: 'Charm-Regular';
 $auxiliar: white;
 $size_titulos: 2.5rem;
 $size_p: 1.4rem;
-$sombra: rgb(167, 43, 220);
+$sombra: black;
+$smartphone: 420px;
+$tablets: 768px;
 
 
 @font-face {
@@ -43,3 +45,4 @@ body {
 @import "noticias";
 
 @import "contactos";
+

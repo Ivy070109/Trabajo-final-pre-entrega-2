@@ -2,23 +2,24 @@
     margin-top: 20px;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
     h2 {
         color: $violeta;
         font-family: $titulos;
         padding: 10px;
         font-size: $size_titulos;
         font-weight: bold;
-        margin: 20px o;
     }
     .galería {
         display: flex;
         flex-wrap: wrap; 
-        justify-content: center;       
+        justify-content: center;     
+        margin-bottom: 30px;  
     }
     img {
         width: 400px;
         height: 500px;
-        margin: 10px;
+        margin: 20px;
         border: 5px double $dorado;
         padding: 5px;
         filter: grayscale(5);
