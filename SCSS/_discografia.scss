@@ -7,7 +7,11 @@
     width: 500px;
     height: 500px;
     margin-top: 20px;
-    box-shadow: 0 0 20px 0 black;
+    box-shadow: 0 0 30px 0 $sombra;
+    @media (max-width: $smartphone) {
+      width: 380px;
+      height: 380px;
+    }
     .carousel-caption {
       color: $violeta;
       font-family: $parrafos;
@@ -27,7 +31,7 @@
 section { 
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   .accordion {
     width: 90%; 
     .accordion-item {
@@ -52,6 +56,15 @@ section {
       line-height: 2;
       iframe {
         justify-content: center;
+        width: 50%;
+        height: 300px;
+        @media (max-width: $tablets) {
+          width: 80%;
+        }
+        @media (max-width: $smartphone) {
+          width: 90%;
+          height: 200px;
+        }
       }
     }
     }   

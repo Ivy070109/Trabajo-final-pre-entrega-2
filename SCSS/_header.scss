@@ -82,4 +82,16 @@ header {
             }
         }
     }
+    .navbar-toggler {
+        border: solid 3px goldenrod;
+        &:hover {
+            transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            -o-transform: scale(1.3);
+}
+     }
+     
+     
 }

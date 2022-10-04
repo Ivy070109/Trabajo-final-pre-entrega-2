@@ -84,6 +84,14 @@ header {
         -moz-transform: scale(1.3);
         -ms-transform: scale(1.3);
         -o-transform: scale(1.3); }
+  header .navbar-toggler {
+    border: solid 3px goldenrod; }
+    header .navbar-toggler:hover {
+      transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3); }
 
 main {
   margin-top: 20px; }
@@ -100,78 +108,107 @@ main {
       @media (max-width: 420px) {
         main section h2 {
           font-size: 2rem;
-          color: blueviolet; } }
-      main section h2 p {
-        font-size: 1.3rem;
-        line-height: 1.5;
-        color: black;
-        font-family: "Charm-Regular";
-        text-align: center; }
-      main section h2 .carousel {
-        box-shadow: 0 20px 20px 0 #201b1b;
-        filter: grayscale(5);
-        -webkit-filter: grayscale(5); }
-        main section h2 .carousel:hover {
-          filter: none;
-          -webkit-filter: none; }
-    main section aside {
-      margin-top: 10px;
-      padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 0; } }
+      @media (max-width: 768px) {
+        main section h2 {
+          font-size: 2.5rem;
+          margin-bottom: 0; } }
+    main section .carousel {
+      box-shadow: 0 20px 20px 0 #201b1b;
+      filter: grayscale(5);
+      -webkit-filter: grayscale(5); }
+      main section .carousel:hover {
+        filter: none;
+        -webkit-filter: none; }
+      @media (max-width: 420px) {
+        main section .carousel {
+          margin-top: 0;
+          margin: 0 15px; } }
+      @media (max-width: 768px) {
+        main section .carousel {
+          margin-top: 20px;
+          margin: 0 10px; } }
+    main section .section_intro {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      color: black;
+      font-family: "Charm-Regular";
+      text-align: center; }
+      @media (max-width: 420px) {
+        main section .section_intro {
+          padding: 15px;
+          margin-bottom: 0; } }
+      @media (max-width: 768px) {
+        main section .section_intro {
+          padding: 10px;
+          margin-top: 15px;
+          margin-bottom: 0; } }
+  main aside {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main aside .aside__titulo {
+      font-family: "Charm-Regular";
+      margin-top: 2rem;
+      font-weight: bold;
+      color: #711161; }
+    main aside .social {
+      /*aplicar mixin a todos los elementos sociales */
+      font-size: 3.5rem;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      main section aside .aside__titulo {
-        font-family: "Charm-Regular";
-        margin-top: 2rem;
-        font-weight: bold;
-        color: #711161; }
-      main section aside .social {
-        font-size: 3.5rem;
-        display: flex;
-        width: 50%;
-        justify-content: space-around;
-        margin-bottom: 30px; }
-        main section aside .social #facebook {
-          color: #711161;
-          margin: 0 auto; }
-          main section aside .social #facebook:hover {
-            transform: scale(1.5);
-            -webkit-transform: scale(1.5);
-            -moz-transform: scale(1.5);
-            -ms-transform: scale(1.5);
-            -o-transform: scale(1.5);
-            color: goldenrod; }
-        main section aside .social #twitter {
-          color: #711161;
-          margin: 0 auto; }
-          main section aside .social #twitter:hover {
-            transform: scale(1.5);
-            -webkit-transform: scale(1.5);
-            -moz-transform: scale(1.5);
-            -ms-transform: scale(1.5);
-            -o-transform: scale(1.5);
-            color: goldenrod; }
-        main section aside .social #instagram {
-          color: #711161;
-          margin: 0 auto; }
-          main section aside .social #instagram:hover {
-            transform: scale(1.5);
-            -webkit-transform: scale(1.5);
-            -moz-transform: scale(1.5);
-            -ms-transform: scale(1.5);
-            -o-transform: scale(1.5);
-            color: goldenrod; }
-        main section aside .social #youtube {
-          color: #711161;
-          margin: 0 auto; }
-          main section aside .social #youtube:hover {
-            transform: scale(1.5);
-            -webkit-transform: scale(1.5);
-            -moz-transform: scale(1.5);
-            -ms-transform: scale(1.5);
-            -o-transform: scale(1.5);
-            color: goldenrod; }
+      width: 50%;
+      justify-content: space-around;
+      margin-bottom: 30px; }
+      @media (max-width: 420px) {
+        main aside .social {
+          justify-content: space-around; } }
+      @media (max-width: 768px) {
+        main aside .social {
+          justify-content: space-around; } }
+      main aside .social #facebook {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #facebook:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+      main aside .social #twitter {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #twitter:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+      main aside .social #instagram {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #instagram:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
+      main aside .social #youtube {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #youtube:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: goldenrod; }
 
 footer {
   font-size: 0.8rem;
@@ -199,7 +236,11 @@ footer {
     width: 500px;
     height: 500px;
     margin-top: 20px;
-    box-shadow: 0 0 20px 0 black; }
+    box-shadow: 0 0 30px 0 black; }
+    @media (max-width: 420px) {
+      .main .carousel {
+        width: 380px;
+        height: 380px; } }
     .main .carousel .carousel-caption {
       color: #711161;
       font-family: "Charm-Regular"; }
@@ -214,7 +255,7 @@ footer {
 section {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px; }
+  margin-bottom: 35px; }
   section .accordion {
     width: 90%; }
     section .accordion .accordion-item {
@@ -237,7 +278,16 @@ section {
         text-align: center;
         line-height: 2; }
         section .accordion .accordion-item .accordion-collapse iframe {
-          justify-content: center; }
+          justify-content: center;
+          width: 50%;
+          height: 300px; }
+          @media (max-width: 768px) {
+            section .accordion .accordion-item .accordion-collapse iframe {
+              width: 80%; } }
+          @media (max-width: 420px) {
+            section .accordion .accordion-item .accordion-collapse iframe {
+              width: 90%;
+              height: 200px; } }
 
 .main_gallery {
   margin-top: 20px;
@@ -263,13 +313,22 @@ section {
     padding: 5px;
     filter: grayscale(5);
     -webkit-filter: grayscale(5); }
+    @media (max-width: 768px) {
+      .main_gallery img {
+        width: 300px;
+        height: 450px;
+        margin: 15px; } }
+    @media (max-width: 420px) {
+      .main_gallery img {
+        width: auto;
+        height: 450px; } }
     .main_gallery img:hover {
       filter: none;
       -webkit-filter: none; }
 
 main {
   margin-top: 20px; }
-  main h2 {
+  main .section__titulo h2 {
     color: #711161;
     font-family: "DancingScript";
     padding: 10px;
@@ -277,34 +336,53 @@ main {
     font-weight: bold;
     margin: 20px o;
     text-align: center; }
-  main section {
-    padding: 0 20px;
-    margin-bottom: 20px; }
-    main section .parrafito {
-      margin-top: 20px;
-      font-size: 1.3rem;
-      color: black;
-      line-height: 1.5;
-      padding: 20px; }
-    main section .contenedor_concierto {
-      display: flex;
-      justify-content: center; }
-      main section .contenedor_concierto img {
+  main .section__intro #flores {
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 20px 20px 0 black; }
+    @media (max-width: 768px) {
+      main .section__intro #flores {
         width: 600px;
         height: auto;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        box-shadow: 0 20px 20px 0 #201b1b; }
-  main p {
+        margin-bottom: 0; } }
+    @media (max-width: 420px) {
+      main .section__intro #flores {
+        width: 300px;
+        height: auto; } }
+  main .section__concierto p {
+    text-align: justify;
+    font-family: "Charm-Regular";
+    margin-top: 20px;
     font-size: 1.3rem;
-    line-height: 1.5; }
-  main aside .video {
+    color: black;
+    line-height: 1.5;
+    padding: 20px;
+    margin-bottom: 0; }
+    @media (max-width: 768px) {
+      main .section__concierto p {
+        margin-top: 0; } }
+  main aside iframe {
     margin-top: 0;
-    margin-bottom: 20px;
-    box-shadow: 0 20px 20px 0 #201b1b; }
+    box-shadow: 0 40px 40px 0 black;
+    width: 560px;
+    height: 315px; }
+    @media (max-width: 420px) {
+      main aside iframe {
+        width: 350px;
+        height: auto; } }
+  main .section__festival p {
+    text-align: justify;
+    font-family: "Charm-Regular";
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: black;
+    line-height: 1.5;
+    padding: 20px; }
 
 section {
   margin-top: 20px; }
@@ -348,12 +426,24 @@ section {
     .section2 .map #direccion {
       width: 550px;
       height: 450px; }
+      @media (max-width: 420px) {
+        .section2 .map #direccion {
+          width: 370px;
+          height: 300px; } }
 
 .forma {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 60px; }
+  @media (max-width: 768px) {
+    .forma {
+      margin-top: 15px;
+      align-items: center; } }
+  @media (max-width: 420px) {
+    .forma {
+      align-items: center;
+      margin-top: 0; } }
   .forma fieldset {
     background: linear-gradient(90deg, #e48cce, #711161);
     width: 80%;
