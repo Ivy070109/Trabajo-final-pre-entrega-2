@@ -104,7 +104,10 @@ main {
       font-family: "DancingScript";
       padding: 10px;
       font-size: 2.5rem;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      text-align: center; }
       @media (max-width: 420px) {
         main section h2 {
           font-size: 2rem;
@@ -157,7 +160,6 @@ main {
       font-weight: bold;
       color: #711161; }
     main aside .social {
-      /*aplicar mixin a todos los elementos sociales */
       font-size: 3.5rem;
       display: flex;
       width: 50%;
@@ -272,22 +274,28 @@ section {
         font-size: 1.5rem;
         background-color: #201b1b;
         border: #711161; }
-      section .accordion .accordion-item .accordion-collapse {
+    section .accordion .accordion-collapse {
+      justify-content: center; }
+      section .accordion .accordion-collapse p {
+        font-size: 1.3rem;
+        line-height: 1.5;
         color: black;
         font-family: "Charm-Regular";
-        text-align: center;
-        line-height: 2; }
-        section .accordion .accordion-item .accordion-collapse iframe {
-          justify-content: center;
-          width: 50%;
-          height: 300px; }
-          @media (max-width: 768px) {
-            section .accordion .accordion-item .accordion-collapse iframe {
-              width: 80%; } }
-          @media (max-width: 420px) {
-            section .accordion .accordion-item .accordion-collapse iframe {
-              width: 90%;
-              height: 200px; } }
+        text-align: center; }
+      section .accordion .accordion-collapse iframe {
+        margin: 0 320px;
+        justify-content: center;
+        width: 50%;
+        height: 300px; }
+        @media (max-width: 768px) {
+          section .accordion .accordion-collapse iframe {
+            width: 80%;
+            margin: 0 60px; } }
+        @media (max-width: 420px) {
+          section .accordion .accordion-collapse iframe {
+            width: 90%;
+            height: 200px;
+            margin: 0 15px; } }
 
 .main_gallery {
   margin-top: 20px;
@@ -334,7 +342,8 @@ main {
     padding: 10px;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 20px o;
+    text-align: center;
+    margin: 20px 0;
     text-align: center; }
   main .section__intro #flores {
     width: 800px;
@@ -382,7 +391,8 @@ main {
     font-size: 1.3rem;
     color: black;
     line-height: 1.5;
-    padding: 20px; }
+    padding: 20px;
+    margin-bottom: 0; }
 
 section {
   margin-top: 20px; }
@@ -392,7 +402,8 @@ section {
     padding: 10px;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 20px o;
+    text-align: center;
+    margin: 20px 0;
     text-align: center; }
 
 .section2 {

@@ -1,3 +1,5 @@
+@import "mixin";
+
 main {
     margin-top: 20px;
     section {
@@ -5,11 +7,7 @@ main {
         font-size: $size_p;
         line-height: 1.5;
         h2 {
-            color: $violeta;
-            font-family: $titulos;
-            padding: 10px;
-            font-size: $size_titulos;
-            font-weight: bold;
+            @include titulos;
             @media (max-width: $smartphone) {
                 font-size: 2rem;
                 margin-top: 5px;
@@ -39,11 +37,7 @@ main {
             
         } 
         .section_intro {
-            font-size: 1.3rem;
-            line-height: 1.5;
-            color: black;
-            font-family: $parrafos;
-            text-align: center;
+            @include parrafos;
             @media (max-width: $smartphone) {
                 padding: 15px;
                 margin-bottom: 0;
@@ -69,7 +63,7 @@ main {
             font-weight: bold;
             color: $violeta;
         }
-        .social { /*aplicar mixin a todos los elementos sociales */
+        .social {
             font-size: 3.5rem;
             display: flex;
             width: 50%;
@@ -82,54 +76,17 @@ main {
                 justify-content: space-around;
             }
             #facebook {
-                color: $violeta;
-                margin: 0 auto;
-                &:hover {
-                    transform: scale(1.5);
-                    -webkit-transform: scale(1.5);
-                    -moz-transform: scale(1.5);
-                    -ms-transform: scale(1.5);
-                    -o-transform: scale(1.5);
-                    color: $dorado;
-                }
+                @include redes;
             }
             #twitter {
-                color: $violeta;
-                margin: 0 auto;
-                &:hover {
-                    transform: scale(1.5);
-                    -webkit-transform: scale(1.5);
-                    -moz-transform: scale(1.5);
-                    -ms-transform: scale(1.5);
-                    -o-transform: scale(1.5);
-                    color: $dorado;
-                }
+                @include redes;
             }
             #instagram {
-                color: $violeta;
-                margin: 0 auto;
-                &:hover {
-                    transform: scale(1.5);
-                    -webkit-transform: scale(1.5);
-                    -moz-transform: scale(1.5);
-                    -ms-transform: scale(1.5);
-                    -o-transform: scale(1.5);
-                    color: $dorado;
-                }
+               @include redes;
             }
             #youtube {
-                color: $violeta;
-                margin: 0 auto;
-                &:hover {
-                    transform: scale(1.5);
-                    -webkit-transform: scale(1.5);
-                    -moz-transform: scale(1.5);
-                    -ms-transform: scale(1.5);
-                    -o-transform: scale(1.5);
-                    color: $dorado;
-                }
+                @include redes;
             }
         }
     }
 }
-
