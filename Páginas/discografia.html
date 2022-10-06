@@ -4,22 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fanbase en español de la banda inglesa Florence + The Machine, te traemos las últimas noticias de tu banda favorita">
+    <meta name="keywords" content="Florence + The Machine, Florence and The Machine, Florence Welch, indie, brits awards, festivales, música, Dance Fever, High as hope, How big how blue how beautiful, Ceremonials, Lungs, dogs days are over"> 
     <link rel="icon" href="../IMG/Florence_and_the_Machine_2018_logo.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Discografía</title>
+    <title>Florence + The Machine | Descubre la discografía</title>
 </head>
 <body>
-    <header id="top">
-        <nav class="navbar navbar-expand-lg bg-dark col-xs-12 col-s-12 col-md-12 col-lg-12">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../IMG/logo.png" alt="logo" width="35" height="40">
-                <span>Florence + The Machine</span>
+  <header class="header col-xs-12 col-s-12 col-md-12 col-lg-12" id="top">
+    <nav class="navbar navbar-expand-lg col-s-12 col-xs-12 col-md-12 col-lg-12 bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../IMG/logo.png" alt="logo" width="35" height="40">
+          <span class="flo_machine">Florence + The Machine</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html" id="home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./discografia.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discografía
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <ul class="dropdown-menu bg-dark">
+                <li class="bg-dark"><a class="dropdown-item" href="#lungs">Lungs</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="bg-dark"><a class="dropdown-item" href="#ceremonials">Ceremonials</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="bg-dark"><a class="dropdown-item" href="#how_big">How Big, How Blue, How Beautiful</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="bg-dark"><a class="dropdown-item" href="#high">Highs as Hope</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="bg-dark"><a class="dropdown-item" href="#dance">Dance Fever</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactos.html" id="contactos">Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled"></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <main class="col-sx-12 col-s-12 col-md-12 col-lg-12 text-center">
+        <h1>Descubre su Discografía</h1>
+        <section class="container__disc col-sx-12 col-s-12 col-md-12 col-lg-12">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -35,11 +88,7 @@
                       <li><hr class="dropdown-divider"></li>
                       <li class="bg-dark"><a class="dropdown-item" href="#ceremonials">Ceremonials</a></li>
                       <li><hr class="dropdown-divider"></li>
-<<<<<<< HEAD
-                      <li class="bg-dark"><a class="dropdown-item" href="#big_blue">How Big, How Blue, How Beautiful</a></li>
-=======
                       <li class="bg-dark"><a class="dropdown-item" href="#how_big">How Big, How Blue, How Beautiful</a></li>
->>>>>>> sass
                       <li><hr class="dropdown-divider"></li>
                       <li class="bg-dark"><a class="dropdown-item" href="#high">Highs as Hope</a></li>
                       <li><hr class="dropdown-divider"></li>
@@ -62,138 +111,149 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
+                </form>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../IMG/Lungs.jpg" class="d-block w-100" alt="lungs">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-outline-dark"><a href="#lungs">Lungs</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../IMG/Ceremonials.jpg" class="d-block w-100" alt="ceremonials">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-outline-dark"><a href="#ceremonials">Ceremonials</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../IMG/How_Big.jpg" class="d-block w-100" alt="how big, how blue, how beautiful">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-outline-dark"><a href="#how_big">How Big, How Blue, How Beautiful</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../IMG/High_AS.jpg" class="d-block w-100" alt="high as hope">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-outline-dark"><a href="#high">High as Hope</a></button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../IMG/Dance_fever.jpg" class="d-block w-100" alt="dance fever">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn btn-outline-dark"><a href="#dance">Dance Fever</a></button>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="col-xs-12 col-s-12 col-md-12 col-lg-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Lungs
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="lungs">
+                    <p>El álbum debut de la banda, Lungs, fue lanzado el 6 de julio de 2009. Fue producido por James Ford de Simian Mobile Disco, Paul Epworth, Steve Mackey y Charlie Hugall. En enero de 2010, el álbum alcanzó la primera posición, después de haber estado en la lista 28 semanas consecutivas hasta ese momento. El álbum alcanzó la primera posición en las listas de ventas del Reino Unido, así como el 13.ª posición en las listas europeas. A fecha del 6 de agosto, había vendido más de 100.000 copias en el Reino Unido, por lo que alcanzó la 2.ª posición y la mantuvo durante cinco semanas. Este mismo álbum fue editado en los Estados Unidos el 20 de octubre por la compañía Island Records y estuvo entre los 40 álbumes principales del Reino Unido durante 65 semanas consecutivas, convirtiéndolo en uno de los discos más vendidos del 2009 y 2010. En los BRIT Awards del 2010, Lungs ganó el premio al mejor álbum británico otorgado por MasterCard. Florence and the Machine actuó en vivo en los MTV Video Music Awards y en el concierto de la entrega del Premio Nobel de la Paz, ambos en 2010. La banda fue nominada en la categoría "Artista Revelación" en la entrega número 53 de los Premios Grammy, pero la cantante de jazz Esperanza Spalding terminó llevándose dicho galardón. El sencillo debut de la banda fue "Kiss with a Fist", canción usada para la banda sonora de la película Jennifer's Body, y también en la película Wild Child. El siguiente sencillo fue la canción "Dog Days Are Over", usado para la BSO de Eat Pray Love al que siguieron "Rabbit Heart (Raise It Up)", "Drumming Song" y "You've Got The Love". Luego vino el relanzamiento de "Dog Days Are Over" en abril del 2010 con una nueva versión audiovisual. El siguiente sencillo fue "Cosmic Love" lanzado en julio y "Heavy in Your Arms", banda sonora de The Twilight Saga: Eclipse.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1rLLyY5p6HXNl2lKzINWp5?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="text-center"></iframe>
+                </div>
+              </div>
+              <div class="accordion-item" id="ceremonials">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Ceremonials
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>El grupo empezó a grabar su segundo álbum en enero de 2010 con la ayuda del productor Paul Epworth. Welch describió el sonido de este disco como "más duro".</p>
+                    <p>El 23 de agosto de 2011, presenta "What the Water Gave Me", el primer sencillo de su segundo disco, y a principios de septiembre se reveló que el segundo álbum sería titulado Ceremonials. Finalmente fue lanzado el 31 de octubre en el Reino Unido. El segundo sencillo de este disco, titulado "Shake It Out", fue presentado en la cadena BBC Radio 1. Su tercer sencillo es "No Light, No Light" y fue lanzado el 8 de marzo de 2012, la canción recibió excelentes comentarios de la crítica, que elogió su letra diciendo que «suena a autocrítica» y que «la canción se las ingenia para sonar inquietamente épica».</p>
+                    <p>Florence and The Machine también ha colaborado con la banda sonora de la película de Rupert Sanders, Snow White & the Huntsman, con el tema principal "Breath of life" inspirado en la reina malvada.</p>
+                    <p>En abril de 2012, se lanzó su segundo álbum en vivo MTV Unplugged - A Live Album, grabado en Nueva York en diciembre de 2011 en el Angel Orensanz Center. El show contó con la participación de Josh Homme, vocalista de Queens of the Stone Age, en la versión de "Jackson", originalmente grabado por Johnny Cash y June Carter.</p>
+                    <p>La banda relanzó en junio de 2012 el sencillo "Spectrum (Say My Name)" en una nueva versión remezclada por el DJ y productor Calvin Harris. Gracias a este sencillo, la banda logró obtener su primer número 1 en el Reino Unido. Según declaraciones de Florence en la BBC Radio 1, este sería el último sencillo de Ceremonials. Sin embargo, más tarde se lanzó "Breaking Down" siendo este oficialmente el último sencillo del álbum.</p>
+                    <p>En diciembre de 2012, Florence and the Machine recibieron nominaciones a los Premios Grammy de 2013 en las categorías Mejor Álbum de Pop Vocal por Ceremonials y a la Mejor Interpretación Vocal de Pop Dúo/Banda por su canción "Shake It Out". El 4 de abril de 2013 se anunció que el grupo había escrito la canción "Over the love" para ser incluida en la banda sonora de la película El gran Gatsby, dirigida por Baz Luhrmann, junto a nombres como los de Lana del Rey, Jay-Z o Jack White. El sencillo fue lanzado el 17 de abril de 2013 en SoundCloud.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/19J2iqK89BCrNG4El2FRi5?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="how_big">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How Big, How Blue, How Beatiful
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>El 4 de junio de 2014, Welch dijo a NME que el tercer álbum de estudio de la banda estaba en proceso. En enero de 2015, un sitio de fanes publicó una foto que muestra a Florence and the Machine mezclando su próximo álbum en un estudio de grabación. La fotografía fue eliminada, pero apareció en varios sitios web de noticias más tarde. El 9 de febrero, la banda tocó todas las canciones del nuevo álbum en su totalidad, entre ellos "Ship to Wreck", "Caught", "Delilah" y el primer sencillo del álbum, "What Kind of Man" en un show privado de Londres. Al día siguiente, el 10 de febrero, la banda lanzó un video musical breve de la canción principal de su álbum de estudio, How Big, How Blue, How Beautiful, que también actuaba como el resumen oficial del álbum, dirigida por Tabitha Denholm y Vincent Haycock y rodado en México. El sencillo y el álbum estaban disponibles para prepedido en todas las tiendas populares de música en línea. El video musical dura un poco menos de 3 minutos, en comparación con los 5 minutos de la pista de la versión del álbum. El 12 de febrero, el primer sencillo del álbum "What Kind of Man" fue revelada por Zane Lowe de la BBC Radio 1 Show, seguido por el lanzamiento del video musical más tarde ese día en el canal de VEVO de la banda a través de YouTube.</p>
+                    <p>La banda lanzó un video musical de otra canción llamada "St. Jude" el 23 de marzo, coreografiado por Ryan Heffington y dirigido por Vincent Haycock, continuando con la narración del video anterior de "What Kind of Man". El 8 de abril, el segundo sencillo del álbum titulado "Ship to Wreck" se estrenó en el programa de Huw Stephens, BBC Radio 1. El video musical se estrenó una semana más tarde el 13 de abril, continuando la historia de los dos últimos vídeos. El 19 de mayo, la disc-jockey Annie Mac, reveló en su programa de radio de la BBC que, "Delilah" era el nombre de la nueva canción del disco.</p>
+                    <p>El álbum fue lanzado el 29 de mayo en Alemania, 1 de junio en el Reino Unido y el 2 de junio en los Estados Unidos. Una versión de lujo del álbum que contiene 5 pistas adicionales fue lanzada el 13 de mayo de 2015. En su primera semana de ventas, How Big, How Blue, How Beautiful encabezó las listas en ocho países: Reino Unido, Estados Unidos, Canadá, Irlanda, Suiza, Polonia, Australia y Nueva Zelanda. El álbum también llegó a los diez primeros puestos en diez países más.</p>
+                    <p>Fue el primer álbum de la banda en llegar a la posición número uno en el conteo estadounidense Billboard 200, vendiendo más 137,000 copias. En Canadá, el álbum vendió 19.000 copias en su primera semana que le sirvió para debutar en el número uno. En el Reino Unido, vendió algo menos de 70.000 copias, alcanzando la cima de la lista UK Albums Chart.</p>
+                    <p>La banda ha sido confirmada por numerosos festivales europeos en el verano de 2015, incluyendo Way Out West en Suecia, Super Bock Super Rock en Portugal y Rock Werchter en Bélgica, entre otros. En junio de 2015, se anunció que Florence and the Machine sería titular del prestigioso Festival de Glastonbury después de la cancelación de Foo Fighters por la fractura en la pierna que sufrió Dave Grohl, exbaterista de la banda Nirvana.</p>
+                    <p>Asimismo, la banda ha versionado la conocida Stand by me como canción principal para el videojuego Final Fantasy XV, desvelándose así en el evento "Final Fantasy XV Uncovered".</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2jn2n5OkuHliOLKCqHnjXV?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="high">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  High as Hope
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>El 26 de mayo de 2017, Florence concedió una entrevista al periódico británico The Telegraph en la cual afirmó que se encontraba en la etapa inicial de la creación de su cuarto álbum de estudio. Según Welch, el próximo disco será un "hoyo negro" en el cual abordará temas como su reciente ruptura amorosa y su alcoholismo.</p>
+                    <p>El 12 de abril de 2018, se publicó el sencillo Sky Full of Song, que también fue lanzado en vinilo el 21 de abril del mismo año, para celebrar el Record Store Day. El 3 de mayo de 2018, la banda lanzó el sencillo Hunger, acompañado de un video musical. Ese mismo día, la banda confirmó el título y lista de canciones de su cuarto álbum de estudio: High As Hope que fue publicado el 29 de junio de 2018.</p>
+                    <p>El 5 de agosto de 2018, arrancó la gira mundial en apoyo del álbum titulada: High As Hope Tour en la cual recorrerían durante más de un año y en más de 93 espectáculos los continentes de Europa, América y Oceanía. Comenzó en dicha fecha en la ciudad de Montreal, en Canadá y finalizaría el 22 de septiembre de 2019 en Atenas, Grecia.</p>
+                    <p>El 24 de enero de 2019, Florence and The Machine lanzó un nuevo sencillo, "Moderation", que había sido presentado previamente en vivo durante la etapa australiana del High As Hope Tour. No aparece en "High As Hope". A su vez, se lanzó una cara B, "Haunted House". El pasado 17 de abril de 2020, Florence and The Machine, lanzó el sencillo titulado "Light of Love" como respuesta para recaudar fondos tras el impacto de la Pandemia de enfermedad por COVID-19 en Reino Unido. La banda anunció que todo el dinero recaudado tras el lanzamiento del sencillo sería destinado para la organización llamada "Intesive Care Society", y que el propio sencillo estaba grabado originalmente como canción del álbum "High as Hope".</p>
+                    <p>El 10 de mayo de 2021 Florence and The Machine confirmó el estreno de su nuevo tema para la banda sonora de la película de Disney, Cruella. La canción titulada, "Call Me Cruella", fue publicada el 21 de mayo de 2021, junto con el resto de la banda sonora.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2jn2n5OkuHliOLKCqHnjXV?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="dance">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Dance Fever
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>En diciembre de 2021, se anunció su participación en el Mad Cool Festival que tendrá lugar en Madrid, en julio de 2022. A finales de febrero de 2022, numerosos fans del grupo, comenzaron a recibir cartas con una tarjeta titulada: "King - Chapter 1"; a la vez que Billboard comenzó a publicitarla por la ciudad de Londres. Las especulaciones llevaron a que se tratase de nueva música, incluso de su nuevo y quinto álbum de estudio. Un día más tarde, el 22 de febrero, la propia Florence Welch lo confirma mediante sus redes sociales.</p>
+                    <p>El 23 de febrero de 2022, publicaron: King como primer sencillo del álbum. El 7 de marzo, publicaron su segundo sencillo titulado: Heaven is Here, habiendo sido anunciado el día previo a su estreno. El 9 de marzo, vías redes sociales, Welch, reveló la portada y el título de su nuevo álbum: Dance Fever, iniciando la pre-venta del mismo. El quinto álbum de estudio, salió a la venta el 13 de mayo de 2022.Debutando en el puesto número uno, en el Reino Unido y en el puesto número dos, en Australia.</p>
+                    <p>My Love, fue lanzado como tercer sencillo el 10 de marzo de 2022. El 20 de abril fue publicado el cuarto sencillo, Free junto a su videoclip. El 16 de marzo de 2022, el integrante de la banda The Maccabees, Sam Doyle, se unió en reemplazo del batería Loren Humphrey, quién dejó la banda a comienzos del año.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4ohh1zQ4yybSK9FS7LLyDE?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                </div>
               </div>
             </div>
-          </nav>
-    </header>
-    <main class="container__disc">
-      <div id="carouselExampleIndicators" class="carousel slide col-xs-12 col-s-12 col-md-12 col-lg-12" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <a class="btn btn-primary" href="#collapseOne" role="button">Lungs</a>
-            </button>
-            <img src="../IMG/Lungs.jpg" class="d-block w-100" alt="lungs">
           </div>
-          <div class="carousel-item">
-            <img src="../IMG/Ceremonials.jpg" class="d-block w-100" alt="ceremonials">
-          </div>
-          <div class="carousel-item">
-            <img src="../IMG/How_Big.jpg" class="d-block w-100" alt="how big, how blue, how beautiful">
-          </div>
-          <div class="carousel-item">
-            <img src="../IMG/High_AS.jpg" class="d-block w-100" alt="high as hope">
-          </div>
-          <div class="carousel-item">
-            <img src="../IMG/Dance_fever.jpg" class="d-block w-100" alt="dance fever">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-      <div class="accordion col-xs-12 col-s-12 col-md-12 col-lg-12" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Lungs
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body" id="lungs">
-                <p>El álbum debut de la banda, Lungs, fue lanzado el 6 de julio de 2009. Fue producido por James Ford de Simian Mobile Disco, Paul Epworth, Steve Mackey y Charlie Hugall. En enero de 2010, el álbum alcanzó la primera posición, después de haber estado en la lista 28 semanas consecutivas hasta ese momento. El álbum alcanzó la primera posición en las listas de ventas del Reino Unido, así como el 13.ª posición en las listas europeas. A fecha del 6 de agosto, había vendido más de 100.000 copias en el Reino Unido, por lo que alcanzó la 2.ª posición y la mantuvo durante cinco semanas. Este mismo álbum fue editado en los Estados Unidos el 20 de octubre por la compañía Island Records y estuvo entre los 40 álbumes principales del Reino Unido durante 65 semanas consecutivas, convirtiéndolo en uno de los discos más vendidos del 2009 y 2010. En los BRIT Awards del 2010, Lungs ganó el premio al mejor álbum británico otorgado por MasterCard. Florence and the Machine actuó en vivo en los MTV Video Music Awards y en el concierto de la entrega del Premio Nobel de la Paz, ambos en 2010. La banda fue nominada en la categoría "Artista Revelación" en la entrega número 53 de los Premios Grammy, pero la cantante de jazz Esperanza Spalding terminó llevándose dicho galardón. El sencillo debut de la banda fue "Kiss with a Fist", canción usada para la banda sonora de la película Jennifer's Body, y también en la película Wild Child. El siguiente sencillo fue la canción "Dog Days Are Over", usado para la BSO de Eat Pray Love al que siguieron "Rabbit Heart (Raise It Up)", "Drumming Song" y "You've Got The Love". Luego vino el relanzamiento de "Dog Days Are Over" en abril del 2010 con una nueva versión audiovisual. El siguiente sencillo fue "Cosmic Love" lanzado en julio y "Heavy in Your Arms", banda sonora de The Twilight Saga: Eclipse.</p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1rLLyY5p6HXNl2lKzINWp5?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
-        </div>
-        <div class="accordion-item" id="ceremonials">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Ceremonials
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>El grupo empezó a grabar su segundo álbum en enero de 2010 con la ayuda del productor Paul Epworth. Welch describió el sonido de este disco como "más duro".</p>
-                <p>El 23 de agosto de 2011, presenta "What the Water Gave Me", el primer sencillo de su segundo disco, y a principios de septiembre se reveló que el segundo álbum sería titulado Ceremonials. Finalmente fue lanzado el 31 de octubre en el Reino Unido. El segundo sencillo de este disco, titulado "Shake It Out", fue presentado en la cadena BBC Radio 1. Su tercer sencillo es "No Light, No Light" y fue lanzado el 8 de marzo de 2012, la canción recibió excelentes comentarios de la crítica, que elogió su letra diciendo que «suena a autocrítica» y que «la canción se las ingenia para sonar inquietamente épica».</p>
-                <p>Florence and The Machine también ha colaborado con la banda sonora de la película de Rupert Sanders, Snow White & the Huntsman, con el tema principal "Breath of life" inspirado en la reina malvada.</p>
-                <p>En abril de 2012, se lanzó su segundo álbum en vivo MTV Unplugged - A Live Album, grabado en Nueva York en diciembre de 2011 en el Angel Orensanz Center. El show contó con la participación de Josh Homme, vocalista de Queens of the Stone Age, en la versión de "Jackson", originalmente grabado por Johnny Cash y June Carter.</p>
-                <p>La banda relanzó en junio de 2012 el sencillo "Spectrum (Say My Name)" en una nueva versión remezclada por el DJ y productor Calvin Harris. Gracias a este sencillo, la banda logró obtener su primer número 1 en el Reino Unido. Según declaraciones de Florence en la BBC Radio 1, este sería el último sencillo de Ceremonials. Sin embargo, más tarde se lanzó "Breaking Down" siendo este oficialmente el último sencillo del álbum.</p>
-                <p>En diciembre de 2012, Florence and the Machine recibieron nominaciones a los Premios Grammy de 2013 en las categorías Mejor Álbum de Pop Vocal por Ceremonials y a la Mejor Interpretación Vocal de Pop Dúo/Banda por su canción "Shake It Out". El 4 de abril de 2013 se anunció que el grupo había escrito la canción "Over the love" para ser incluida en la banda sonora de la película El gran Gatsby, dirigida por Baz Luhrmann, junto a nombres como los de Lana del Rey, Jay-Z o Jack White. El sencillo fue lanzado el 17 de abril de 2013 en SoundCloud.</p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/19J2iqK89BCrNG4El2FRi5?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="how_big">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              How Big, How Blue, How Beatiful
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>El 4 de junio de 2014, Welch dijo a NME que el tercer álbum de estudio de la banda estaba en proceso. En enero de 2015, un sitio de fanes publicó una foto que muestra a Florence and the Machine mezclando su próximo álbum en un estudio de grabación. La fotografía fue eliminada, pero apareció en varios sitios web de noticias más tarde. El 9 de febrero, la banda tocó todas las canciones del nuevo álbum en su totalidad, entre ellos "Ship to Wreck", "Caught", "Delilah" y el primer sencillo del álbum, "What Kind of Man" en un show privado de Londres. Al día siguiente, el 10 de febrero, la banda lanzó un video musical breve de la canción principal de su álbum de estudio, How Big, How Blue, How Beautiful, que también actuaba como el resumen oficial del álbum, dirigida por Tabitha Denholm y Vincent Haycock y rodado en México. El sencillo y el álbum estaban disponibles para prepedido en todas las tiendas populares de música en línea. El video musical dura un poco menos de 3 minutos, en comparación con los 5 minutos de la pista de la versión del álbum. El 12 de febrero, el primer sencillo del álbum "What Kind of Man" fue revelada por Zane Lowe de la BBC Radio 1 Show, seguido por el lanzamiento del video musical más tarde ese día en el canal de VEVO de la banda a través de YouTube.</p>
-              <p>La banda lanzó un video musical de otra canción llamada "St. Jude" el 23 de marzo, coreografiado por Ryan Heffington y dirigido por Vincent Haycock, continuando con la narración del video anterior de "What Kind of Man". El 8 de abril, el segundo sencillo del álbum titulado "Ship to Wreck" se estrenó en el programa de Huw Stephens, BBC Radio 1. El video musical se estrenó una semana más tarde el 13 de abril, continuando la historia de los dos últimos vídeos. El 19 de mayo, la disc-jockey Annie Mac, reveló en su programa de radio de la BBC que, "Delilah" era el nombre de la nueva canción del disco.</p>
-              <p>El álbum fue lanzado el 29 de mayo en Alemania, 1 de junio en el Reino Unido y el 2 de junio en los Estados Unidos. Una versión de lujo del álbum que contiene 5 pistas adicionales fue lanzada el 13 de mayo de 2015. En su primera semana de ventas, How Big, How Blue, How Beautiful encabezó las listas en ocho países: Reino Unido, Estados Unidos, Canadá, Irlanda, Suiza, Polonia, Australia y Nueva Zelanda. El álbum también llegó a los diez primeros puestos en diez países más.</p>
-              <p>Fue el primer álbum de la banda en llegar a la posición número uno en el conteo estadounidense Billboard 200, vendiendo más 137,000 copias. En Canadá, el álbum vendió 19.000 copias en su primera semana que le sirvió para debutar en el número uno. En el Reino Unido, vendió algo menos de 70.000 copias, alcanzando la cima de la lista UK Albums Chart.</p>
-              <p>La banda ha sido confirmada por numerosos festivales europeos en el verano de 2015, incluyendo Way Out West en Suecia, Super Bock Super Rock en Portugal y Rock Werchter en Bélgica, entre otros. En junio de 2015, se anunció que Florence and the Machine sería titular del prestigioso Festival de Glastonbury después de la cancelación de Foo Fighters por la fractura en la pierna que sufrió Dave Grohl, exbaterista de la banda Nirvana.</p>
-              <p>Asimismo, la banda ha versionado la conocida Stand by me como canción principal para el videojuego Final Fantasy XV, desvelándose así en el evento "Final Fantasy XV Uncovered".</p>
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2jn2n5OkuHliOLKCqHnjXV?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="high">
-          <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              High as Hope
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>El 26 de mayo de 2017, Florence concedió una entrevista al periódico británico The Telegraph en la cual afirmó que se encontraba en la etapa inicial de la creación de su cuarto álbum de estudio. Según Welch, el próximo disco será un "hoyo negro" en el cual abordará temas como su reciente ruptura amorosa y su alcoholismo.</p>
-                <p>El 12 de abril de 2018, se publicó el sencillo Sky Full of Song, que también fue lanzado en vinilo el 21 de abril del mismo año, para celebrar el Record Store Day. El 3 de mayo de 2018, la banda lanzó el sencillo Hunger, acompañado de un video musical. Ese mismo día, la banda confirmó el título y lista de canciones de su cuarto álbum de estudio: High As Hope que fue publicado el 29 de junio de 2018.</p>
-                <p>El 5 de agosto de 2018, arrancó la gira mundial en apoyo del álbum titulada: High As Hope Tour en la cual recorrerían durante más de un año y en más de 93 espectáculos los continentes de Europa, América y Oceanía. Comenzó en dicha fecha en la ciudad de Montreal, en Canadá y finalizaría el 22 de septiembre de 2019 en Atenas, Grecia.</p>
-                <p>El 24 de enero de 2019, Florence and The Machine lanzó un nuevo sencillo, "Moderation", que había sido presentado previamente en vivo durante la etapa australiana del High As Hope Tour. No aparece en "High As Hope". A su vez, se lanzó una cara B, "Haunted House". El pasado 17 de abril de 2020, Florence and The Machine, lanzó el sencillo titulado "Light of Love" como respuesta para recaudar fondos tras el impacto de la Pandemia de enfermedad por COVID-19 en Reino Unido. La banda anunció que todo el dinero recaudado tras el lanzamiento del sencillo sería destinado para la organización llamada "Intesive Care Society", y que el propio sencillo estaba grabado originalmente como canción del álbum "High as Hope".</p>
-                <p>El 10 de mayo de 2021 Florence and The Machine confirmó el estreno de su nuevo tema para la banda sonora de la película de Disney, Cruella. La canción titulada, "Call Me Cruella", fue publicada el 21 de mayo de 2021, junto con el resto de la banda sonora.</p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2jn2n5OkuHliOLKCqHnjXV?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item" id="dance">
-          <h2 class="accordion-header" id="headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Dance Fever
-            </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <p>En diciembre de 2021, se anunció su participación en el Mad Cool Festival que tendrá lugar en Madrid, en julio de 2022. A finales de febrero de 2022, numerosos fans del grupo, comenzaron a recibir cartas con una tarjeta titulada: "King - Chapter 1"; a la vez que Billboard comenzó a publicitarla por la ciudad de Londres. Las especulaciones llevaron a que se tratase de nueva música, incluso de su nuevo y quinto álbum de estudio. Un día más tarde, el 22 de febrero, la propia Florence Welch lo confirma mediante sus redes sociales.</p>
-                <p>El 23 de febrero de 2022, publicaron: King como primer sencillo del álbum. El 7 de marzo, publicaron su segundo sencillo titulado: Heaven is Here, habiendo sido anunciado el día previo a su estreno. El 9 de marzo, vías redes sociales, Welch, reveló la portada y el título de su nuevo álbum: Dance Fever, iniciando la pre-venta del mismo. El quinto álbum de estudio, salió a la venta el 13 de mayo de 2022.Debutando en el puesto número uno, en el Reino Unido y en el puesto número dos, en Australia.</p>
-                <p>My Love, fue lanzado como tercer sencillo el 10 de marzo de 2022. El 20 de abril fue publicado el cuarto sencillo, Free junto a su videoclip. El 16 de marzo de 2022, el integrante de la banda The Maccabees, Sam Doyle, se unió en reemplazo del batería Loren Humphrey, quién dejó la banda a comienzos del año.</p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4ohh1zQ4yybSK9FS7LLyDE?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="bg-dark col-xs-12 col-s-12 col-md-12 col-lg-12">
+        </section>
+      </main>
+      <footer class="footer bg-dark col-xs-12 col-s-12 col-md-12 col-lg-12">
         <p><a href="top">Ir arriba</a></p>
         <p>Página sin fines de lucro.</p>
         <p>Todos los derechos reservados. Sin afiliación con Virgin Records EMI/ Unirversal Music Group <a href="https://florenceandthemachine.net/">Florence an The Machine</a></p>
-    </footer>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      </footer>
+    </div>
+  </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
