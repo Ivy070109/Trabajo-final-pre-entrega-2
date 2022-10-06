@@ -253,8 +253,8 @@ main .container__disc {
     margin-bottom: 20px; }
     @media (max-width: 420px) {
       main .container__disc .carousel {
-        width: 360px;
-        height: 360px; } }
+        width: 330px;
+        height: 330px; } }
     @media (max-width: 768px) {
       main .container__disc .carousel {
         width: 450px;
@@ -308,7 +308,7 @@ section {
         height: 300px; }
         @media (max-width: 768px) {
           section .accordion .accordion-collapse iframe {
-            width: 80%;
+            width: 70%;
             margin: 0 60px; } }
         @media (max-width: 420px) {
           section .accordion .accordion-collapse iframe {
