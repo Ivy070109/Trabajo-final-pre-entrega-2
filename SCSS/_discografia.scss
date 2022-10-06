@@ -1,0 +1,87 @@
+main { 
+    h1 {
+      @include titulos;
+    }
+    .container__disc {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      .carousel {
+        width: 500px;
+        height: 500px;
+        margin-top: 20px;
+        box-shadow: 0 0 30px 0 $sombra;
+        margin-bottom: 20px;
+        @media (max-width: $smartphone) {
+          width: 360px;
+          height: 360px;
+        }
+        @media (max-width: $tablets) {
+          width: 450px;
+          height: 450px;
+        }
+        .carousel-caption {
+          color: $violeta;
+          font-family: $parrafos;
+          a {
+            text-decoration: none;
+            color: $sombra;
+            font-size: 1.5rem;
+            font-weight: bold;
+            &:hover {
+              color: $dorado;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  section { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    .accordion {
+      width: 90%; 
+      @media (max-width: $tablets) {
+        width: 85%;
+      }
+      .accordion-item {
+        color: $sombra;
+        font-size: 1.2rem;
+        line-height: 2;
+        border: 1px solid $sombra;
+        box-shadow: 0 0 30px 0 $sombra;
+        background: linear-gradient(45deg, $violeta, $rosa);
+        button {
+          font-weight: bold;
+          font-family: $titulos;
+          color: $dorado;
+          font-size: 1.5rem;
+          background-color: $colorHeader;
+          border: $violeta;
+        }
+      }
+      .accordion-collapse {
+        justify-content: center;
+        p {
+          @include parrafos;
+        }
+        iframe {
+          margin: 0 320px;
+          justify-content: center;
+          width: 50%;
+          height: 300px;
+          @media (max-width: $tablets) {
+            width: 80%;
+            margin: 0 60px;
+          }
+          @media (max-width: $smartphone) {
+            width: 90%;
+            height: 200px;
+            margin: 0 15px;
+          }
+        }
+      }
+    }   
+  }

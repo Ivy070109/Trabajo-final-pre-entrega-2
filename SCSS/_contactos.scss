@@ -1,0 +1,115 @@
+section {
+    margin-top: 20px;
+    h1 {
+        @include titulos;
+    }
+}
+
+.section2 {
+    padding: 20px;
+    #mail {
+        width: 30px;
+        height: 30px;
+        color: $violeta;
+        border-bottom: 2px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: $titulos;
+        font-weight: bold;
+        color: $violeta;
+        &:hover {
+            color: $dorado;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    h5 {
+        font-family: $parrafos;
+        font-size: $size_p;
+        color: $sombra;
+        font-weight: bold;
+    }
+    p {
+        color: black;
+        font-family: $parrafos;
+        font-size: 1rem;
+    }
+    .map {
+        padding: 10px;
+        #direccion {
+            width: 550px;
+            height: 450px;
+            @media (max-width: $smartphone) {
+                width: 370px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    @media (max-width: $tablets) {
+        margin-top: 15px;
+        align-items: center;
+    }
+    @media (max-width: $smartphone) {
+        align-items: center;
+        margin-top: 0;
+    }
+    fieldset {
+        background: linear-gradient(90deg, $rosa, $violeta);
+        width: 80%;
+        place-items: center;
+        padding: 15px;
+        border: solid 5px $violeta;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: 0 0 30px 0 $sombra;
+        h3 {
+            font-family: $parrafos;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .mb-3 {
+            font-family: $parrafos;
+            font-size: 1.2rem;
+            input {
+                background: linear-gradient(90deg, $violeta, $rosa);
+                border: solid 2px black;
+            }
+            textarea {
+                background: linear-gradient(90deg, $violeta, $rosa);
+                border: solid 2px black;
+            }
+        }
+        .btn {
+            background-color: black;
+            font-family: $titulos;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 100%;
+            justify-content: center;
+            color: $dorado;
+            border: solid 2px $dorado;
+            &:hover {
+                color: $dorado;
+                background-color: $violeta;
+                transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                -moz-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                -o-transform: scale(1.3);
+            }
+        }
+    }
+}

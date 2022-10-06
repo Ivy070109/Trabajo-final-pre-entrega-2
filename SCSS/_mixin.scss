@@ -1,0 +1,42 @@
+@mixin redes {
+    color: $violeta;
+    margin: 0 auto;
+    &:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        color: $dorado;
+    }
+}
+
+@mixin titulos {
+    color: $violeta;
+    font-family: $titulos;
+    padding: 10px;
+    font-size: $size_titulos;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@mixin parrafos {
+    font-size: $size_p;
+    line-height: 1.5;
+    color: $sombra;
+    font-family: $parrafos;
+    text-align: center;
+}
+
+@mixin parrafos_noticias {
+    text-align: justify;
+    font-family: $parrafos;
+    margin-top: 20px;
+    font-size: $size_p;
+    color: $sombra;
+    line-height: 1.5;
+    padding: 20px;
+    margin-bottom: 0;
+}

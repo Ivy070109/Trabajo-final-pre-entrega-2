@@ -1,0 +1,48 @@
+$colorHeader: #201b1b;
+$violeta: #711161;
+$rosa: #e48cce;
+$dorado: #daa520;
+$titulos: 'DancingScript';
+$parrafos: 'Charm-Regular';
+$auxiliar: #ffffff;
+$size_titulos: 2.5rem;
+$size_p: 1.3rem;
+$sombra: #000000;
+$smartphone: 420px;
+$tablets: 768px;
+
+@font-face {
+    font-family: 'Charm-Regular';
+    src: url(../Fuentes/Charm-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../Fuentes/DancingScript.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $rosa;
+}
+
+@import "header";
+
+@import "main_index";
+
+@import "footer";
+
+@import "discografia";
+
+@import "galeria";
+
+@import "noticias";
+
+@import "contactos";
+
+@import "mixin";

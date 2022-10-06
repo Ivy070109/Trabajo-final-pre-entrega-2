@@ -1,0 +1,97 @@
+header {
+    text-align: center;
+    box-shadow: 0 0 15px 0 $sombra;
+    .flo_machine {
+        color: $dorado;
+        font-family: $titulos;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    img {
+        width: 35px;
+        height: 40px;
+    }
+    ul {
+        color: $dorado;
+        li {
+            color: $dorado;
+            font-size: 1.2rem;
+            font-family: $titulos;
+            .nav-link {
+                color: $dorado;
+            &:hover {
+                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                background-color: $violeta;
+                color: $dorado;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+            }
+            }
+            #home {
+                color: $dorado;
+                &:hover {
+                    color: $dorado;
+                }
+            }
+            .dropdown-menu {
+                color: $dorado;
+                font-size: 1rem;
+                .dropdown-item {
+                    color: $dorado;
+                    font-size: 1rem;
+                    &:hover {
+                        background-color: $violeta;
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .d-flex {
+        font-family: $titulos;
+        font-size: 1.2rem;
+        font-weight: bold;
+        .form-control {
+            background-color: $dorado;
+            border: solid $dorado 1px;
+        }
+        .btn {
+            font-weight: bold;
+            color: $dorado;
+            border: solid $dorado 1px;
+            &:hover {
+                background-color: $violeta;
+                color: $dorado;
+                border: solid $colorHeader 1px;
+                transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                -moz-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                -o-transform: scale(1.3);
+            }
+        }
+    }
+    .navbar-toggler {
+        border: solid 3px goldenrod;
+        &:hover {
+            transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            -o-transform: scale(1.3);
+}
+     }
+     
+     
+}
