@@ -1,6 +1,6 @@
 section {
     margin-top: 20px;
-    h2 {
+    h1 {
         @include titulos;
     }
 }
@@ -27,8 +27,8 @@ section {
     }
     h5 {
         font-family: $parrafos;
-        font-size: 1.3rem;
-        color: black;
+        font-size: $size_p;
+        color: $sombra;
         font-weight: bold;
     }
     p {

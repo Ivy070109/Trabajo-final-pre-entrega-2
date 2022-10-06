@@ -18,12 +18,12 @@
     font-size: $size_titulos;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0;
+    margin-top: 20px;
     text-align: center;
 }
 
 @mixin parrafos {
-    font-size: 1.3rem;
+    font-size: $size_p;
     line-height: 1.5;
     color: $sombra;
     font-family: $parrafos;
@@ -34,8 +34,8 @@
     text-align: justify;
     font-family: $parrafos;
     margin-top: 20px;
-    font-size: 1.3rem;
-    color: black;
+    font-size: $size_p;
+    color: $sombra;
     line-height: 1.5;
     padding: 20px;
     margin-bottom: 0;

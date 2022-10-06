@@ -1,27 +1,36 @@
-.main { 
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  .carousel {
-    width: 500px;
-    height: 500px;
-    margin-top: 20px;
-    box-shadow: 0 0 30px 0 $sombra;
-    @media (max-width: $smartphone) {
-      width: 380px;
-      height: 380px;
-    }
-    .carousel-caption {
-      color: $violeta;
-      font-family: $parrafos;
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-        font-weight: bold;
-        &:hover {
-          color: $dorado;
+main { 
+  h1 {
+    @include titulos;
+  }
+  .container__disc {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .carousel {
+      width: 500px;
+      height: 500px;
+      margin-top: 20px;
+      box-shadow: 0 0 30px 0 $sombra;
+      margin-bottom: 20px;
+      @media (max-width: $smartphone) {
+        width: 360px;
+        height: 360px;
+      }
+      @media (max-width: $tablets) {
+        width: 450px;
+        height: 450px;
+      }
+      .carousel-caption {
+        color: $violeta;
+        font-family: $parrafos;
+        a {
+          text-decoration: none;
+          color: $sombra;
+          font-size: 1.5rem;
+          font-weight: bold;
+          &:hover {
+            color: $dorado;
+          }
         }
       }
     }
@@ -34,12 +43,15 @@ section {
   margin-bottom: 35px;
   .accordion {
     width: 90%; 
+    @media (max-width: $tablets) {
+      width: 85%;
+    }
     .accordion-item {
-      color: black;
+      color: $sombra;
       font-size: 1.2rem;
       line-height: 2;
-      border: 1px solid black;
-      box-shadow: 0 0 15px 0 black;
+      border: 1px solid $sombra;
+      box-shadow: 0 0 30px 0 $sombra;
       background: linear-gradient(45deg, $violeta, $rosa);
       button {
         font-weight: bold;

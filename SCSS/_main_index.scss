@@ -6,7 +6,7 @@ main {
         text-align: center;
         font-size: $size_p;
         line-height: 1.5;
-        h2 {
+        h1 {
             @include titulos;
             @media (max-width: $smartphone) {
                 font-size: 2rem;
@@ -28,9 +28,11 @@ main {
             }
             @media (max-width: $smartphone) {
                 margin-top: 0;
+                width: 90%;
                 margin: 0 15px;
             }
             @media (max-width: $tablets) {
+                width: 90%;
                 margin-top: 20px;
                 margin: 0 10px;
             }
@@ -40,7 +42,7 @@ main {
             @include parrafos;
             @media (max-width: $smartphone) {
                 padding: 15px;
-                margin-bottom: 0;
+                margin-bottom: 0;    
             }
             @media (max-width: $tablets) {
                 padding: 10px;
